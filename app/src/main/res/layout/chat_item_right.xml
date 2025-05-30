@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profile_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/CircleImageView"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/timestampTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="#888"
+            android:textSize="12sp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/show_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timestampTextView"
+            android:layout_alignParentEnd="true"
+            android:text="hello"
+            android:visibility="gone"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:padding="8dp"
+            android:maxWidth="200dp"
+            android:background="@drawable/background_right" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/image_message"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:layout_below="@id/show_message"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:layout_marginTop="4dp"
+            app:shapeAppearanceOverlay="@style/RoundedCornerImage" />
+
+        <TextView
+            android:id="@+id/txt_seen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_message"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/reaction_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/show_message"
+            android:layout_alignBottom="@id/show_message"
+            android:layout_marginLeft="4dp"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

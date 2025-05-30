@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#82B1FF"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Current username label -->
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginBottom="8dp"
+android:text="Current username:"
+android:textColor="#000000"
+android:textStyle="bold" />
+
+    <!-- Current username value -->
+<TextView
+android:id="@+id/current_username"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginBottom="24dp"
+android:textColor="#333333"
+android:textSize="16sp" />
+
+    <!-- New username label -->
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginBottom="8dp"
+android:text="New username:"
+android:textColor="#000000"
+android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/new_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter new username"
+            android:inputType="textCapWords"
+            android:textColor="#000000"
+            android:textColorHint="#666666" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <!-- New username input field with Material Design -->
+
+    <!-- Buttons container -->
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:gravity="end"
+android:orientation="horizontal">
+
+<!-- Cancel Button -->
+<Button
+    android:id="@+id/btn_cancel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="12dp"
+    android:backgroundTint="#2C2C2C"
+    android:text="Cancel"
+    android:textColor="#AAAAAA" />
+
+<!-- Save Button -->
+<Button
+    android:id="@+id/btn_save"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:backgroundTint="#2563EB"
+    android:text="Save"
+    android:textColor="#FFFFFF" />
+</LinearLayout>
+    </LinearLayout>
